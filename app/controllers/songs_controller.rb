@@ -1,10 +1,5 @@
 class SongsController < ApplicationController
 
-  # def singluar
-  #   @song = Song.find_by(id: params["id"])
-  #   render :show
-  # end
-
   def index
     @songs = Song.all
     render :index
@@ -22,6 +17,7 @@ class SongsController < ApplicationController
       album: album = params[:album],
       year: year = params[:year]
     )
+    @song.save
     render :show
   end
 

@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-# get "/songs/:id" => "songs#singluar"
   get "/songs" => "songs#index"
   get "/songs/:id" => "songs#show"
   post "/songs" => "songs#create"
@@ -9,4 +8,4 @@ Rails.application.routes.draw do
 
 end
 
-gem "rack-cors"
+
