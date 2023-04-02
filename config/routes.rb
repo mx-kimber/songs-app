@@ -7,3 +7,5 @@ Rails.application.routes.draw do
   get "/songs/:id" => "songs#destroy"
 
 end
+
+gem "rack-cors"
